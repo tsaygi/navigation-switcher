@@ -17,3 +17,7 @@ Safari Web Extension that opens maps links in the app you prefer: Google Maps li
 
 Open the generated project, set your signing team, run on your iPhone, then
 enable it in Settings → Apps → Safari → Extensions and allow the listed websites.
+
+## License
+
+[MIT](LICENSE)
