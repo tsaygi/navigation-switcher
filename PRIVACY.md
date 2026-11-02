@@ -39,4 +39,4 @@ If this policy changes, the updated version will be published at this address wi
 
 ## Contact
 
-Questions about this policy: **[add contact email or support URL]**
+Questions about this policy: [**[reach the author]**](https://github.com/tsaygi/navigation-switcher)
