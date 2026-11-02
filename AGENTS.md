@@ -12,12 +12,12 @@ No build step, no dependencies: plain JS, tested with Node's built-in runner.
 | `extension/convert.js` | Pure functions `convertGoogleMapsUrl` and `convertAppleMapsUrl`. Return `null` when a link can't be converted. Also loads in the browser as globals (exports guarded by `typeof module`). |
 | `extension/content.js` | Runs at `document_start`. Reads `defaultApp` from storage, converts, bumps the counter, `location.replace`s. |
 | `extension/background.js` | Service worker. Resolves short links via `fetch` redirect-follow (content scripts can't read cross-origin redirects). |
-| `extension/popup.{html,css,js}` | Settings panel: default app picker and conversion counter with fun lines. |
+| `extension/popup.{html,css,js}` | Settings panel: Apple Maps / Google Maps / Off picker with a short explanation, and the conversion counter with fun lines. |
 | `test/convert.test.js` | Converter tests. |
 
 ## Storage (`browser.storage.local`)
 
-- `defaultApp`: `"apple"` or `"google"`. Unset means no conversion happens (deliberate, so new users must choose first).
+- `defaultApp`: `"apple"`, `"google"` or `"off"`. Unset behaves as `"apple"` (the app ships with Apple Maps as default); content.js and popup.js each apply that default.
 - `conversionCount`: total conversions, shown in the popup.
 
 ## Commands
@@ -26,6 +26,7 @@ No build step, no dependencies: plain JS, tested with Node's built-in runner.
 
 ## Design rules
 
+- The settings live only in the popup. The container app cannot read `browser.storage.local`; sharing settings with it would need an App Group.
 - Only convert links pointing at the app the user did *not* pick. This also prevents redirect loops.
 - Converters must stay pure and DOM-free so they remain testable in Node. Add a test case for any new URL shape.
 - Apple Maps takes one origin and one destination, so intermediate Google waypoints are dropped.

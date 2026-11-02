@@ -40,14 +40,14 @@ Friends send Google Maps links, you use Apple Maps? Or the other way round? Pick
 ```
 Your friends send you a Google Maps link. You use Apple Maps. Or you use Google Maps and someone sends you an Apple Maps link. Either way, the link opens in the wrong app.
 
-Navigation Switcher is a Safari extension that fixes this. Choose your default maps app once, and links from the other app are converted automatically, so the place, address, coordinates or directions open in the app you actually use.
+Navigation Switcher is a Safari extension that fixes this. Apple Maps is the default and you can change it in a tap. Links from the other app are converted automatically, so the place, address, coordinates or directions open in the app you actually use.
 
 WHY I BUILT THIS
 I switched from Google Maps to Apple Maps, but most of my friends still use Google Maps and keep sending me links. Every time, I had to copy the address and paste it into Apple Maps by hand. The apps that solve this problem were all paid, so I built my own to fix it for myself. Then I decided to make it available to everyone: free, with no ads and no tracking, and that will stay the case.
 
 HOW IT WORKS
 1. Open the app and follow the steps to turn on the extension in Safari settings.
-2. Tap the Navigation Switcher button in Safari and choose Apple Maps or Google Maps as your default.
+2. Apple Maps is the default. To change it, tap the Navigation Switcher button in Safari and choose Google Maps, or Off to pause.
 3. Tap any maps link. If it points at the other app, it is converted and opened in yours.
 
 WHAT IT CONVERTS
@@ -124,7 +124,7 @@ Navigation Switcher is a Safari Web Extension. It has no account and no backend.
 
 To test:
 1. Settings > Apps > Safari > Extensions > Navigation Switcher: turn it on and allow the listed websites.
-2. In Safari, tap the aA (or puzzle piece) menu > Navigation Switcher, and choose "Apple Maps" as the default.
+2. In Safari, tap the aA (or puzzle piece) menu > Navigation Switcher. Apple Maps is already the default; the panel can also switch to Google Maps or Off.
 3. Open this link in Safari: https://www.google.com/maps/place/Tokyo+Tower/@35.6585,139.7454,17z
    It should redirect to Apple Maps for Tokyo Tower.
 4. Choose "Google Maps" as the default, then open: https://maps.apple.com/?q=Tokyo+Tower&ll=35.6586,139.7455

@@ -7,7 +7,7 @@
 </head>
 <body>
   <h1>Navigation Switcher</h1>
-  <p class="hint" id="hint">Which maps app do you want links to open in?</p>
+  <p class="intro">Friends send links from the other maps app? Pick where you want them to open and they are converted automatically in Safari.</p>
   <div class="choices" role="radiogroup">
     <button class="choice" data-app="apple" role="radio">
       <span class="emoji">🍎</span><span>Apple Maps</span>
@@ -15,7 +15,11 @@
     <button class="choice" data-app="google" role="radio">
       <span class="emoji">🗺️</span><span>Google Maps</span>
     </button>
+    <button class="choice" data-app="off" role="radio">
+      <span class="emoji">⏸️</span><span>Off</span>
+    </button>
   </div>
+  <p class="hint" id="hint"></p>
   <div class="counter">
     <div class="count" id="count">0</div>
     <div class="label">links converted</div>

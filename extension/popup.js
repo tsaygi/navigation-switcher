@@ -1,6 +1,13 @@
 // Settings panel: pick the default maps app and see how many links were converted.
 
 const SECONDS_PER_CONVERSION = 10;
+const DEFAULT_APP = "apple";
+
+const HINTS = {
+  apple: "Google Maps links open in Apple Maps.",
+  google: "Apple Maps links open in Google Maps.",
+  off: "Paused. Links open in whichever app they came from.",
+};
 
 const FUN_LINES = [
   [0, "Nothing yet. Waiting for a friend to send a link."],
@@ -21,9 +28,7 @@ function renderChoice(defaultApp) {
   for (const button of document.querySelectorAll(".choice")) {
     button.setAttribute("aria-checked", String(button.dataset.app === defaultApp));
   }
-  if (defaultApp) {
-    document.getElementById("hint").textContent = "Links from the other app open here instead.";
-  }
+  document.getElementById("hint").textContent = HINTS[defaultApp];
 }
 
 function animateCount(target) {
@@ -39,7 +44,7 @@ function animateCount(target) {
 }
 
 async function init() {
-  const { defaultApp, conversionCount = 0 } = await browser.storage.local.get([
+  const { defaultApp = DEFAULT_APP, conversionCount = 0 } = await browser.storage.local.get([
     "defaultApp",
     "conversionCount",
   ]);

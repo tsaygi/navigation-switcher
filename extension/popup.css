@@ -17,15 +17,17 @@ body {
   font: 15px -apple-system, system-ui, sans-serif;
 }
 h1 { margin: 0 0 4px; font-size: 18px; }
-.hint { margin: 0 0 12px; color: var(--muted); }
-.choices { display: flex; gap: 10px; }
+.intro { margin: 0 0 12px; color: var(--muted); }
+.hint { margin: 10px 0 0; min-height: 2.6em; color: var(--muted); font-size: 13px; }
+.choices { display: flex; gap: 8px; }
 .choice {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  padding: 12px 8px;
+  padding: 12px 4px;
+  font-size: 13px;
   border: 2px solid transparent;
   border-radius: 12px;
   background: var(--card);

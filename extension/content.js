@@ -8,10 +8,10 @@ async function countConversion() {
 }
 
 async function redirectToDefaultApp() {
-  const { defaultApp } = await browser.storage.local.get("defaultApp");
+  const { defaultApp = "apple" } = await browser.storage.local.get("defaultApp");
   const onApple = location.hostname === "maps.apple.com";
   // Only convert links that point at the app the user did not pick.
-  if (!defaultApp || onApple === (defaultApp === "apple")) return;
+  if (defaultApp === "off" || onApple === (defaultApp === "apple")) return;
 
   let target = location.href;
   if (SHORT_LINK_HOSTS.includes(location.hostname)) {
