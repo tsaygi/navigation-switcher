@@ -1,4 +1,8 @@
-# Navigation Switcher
+<p align="center">
+  <img src="assets/logo.svg" width="128" alt="Navigation Switcher logo">
+</p>
+
+<h1 align="center">Navigation Switcher</h1>
 
 Safari Web Extension that opens maps links in the app you prefer: Google Maps links go to Apple Maps, or the reverse, depending on your setting.
 

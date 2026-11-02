@@ -151,5 +151,5 @@ Suggested captions: "Pick your default once", "Friends send Google Maps links", 
 ## Before you submit
 
 - The extension has not been run on a device yet. Test both directions with real shared links, and check that Safari opens the Maps app (or its web page) as expected, before you describe the result in screenshots.
-- The app needs an icon (1024 x 1024) and the container app needs a simple screen explaining how to turn the extension on. Apple rejects apps whose container app does nothing.
+- Use `assets/app-icon-1024.png` as the App Store icon (drop it into the Xcode AppIcon asset). The container app needs a simple screen explaining how to turn the extension on. Apple rejects apps whose container app does nothing.
 - The review notes assume the toolbar menu works as described on your iOS version; adjust step 2 if the label differs.

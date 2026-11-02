@@ -39,6 +39,20 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Navigation Switcher"
+    "default_title": "Navigation Switcher",
+    "default_icon": {
+      "48": "images/icon-48.png",
+      "96": "images/icon-96.png",
+      "128": "images/icon-128.png",
+      "256": "images/icon-256.png",
+      "512": "images/icon-512.png"
+    }
+  },
+  "icons": {
+    "48": "images/icon-48.png",
+    "96": "images/icon-96.png",
+    "128": "images/icon-128.png",
+    "256": "images/icon-256.png",
+    "512": "images/icon-512.png"
   }
 }

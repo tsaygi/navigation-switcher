@@ -14,6 +14,7 @@ No build step, no dependencies: plain JS, tested with Node's built-in runner.
 | `extension/background.js` | Service worker. Resolves short links via `fetch` redirect-follow (content scripts can't read cross-origin redirects). |
 | `extension/popup.{html,css,js}` | Settings panel: Apple Maps / Google Maps / Off picker with a short explanation, and the conversion counter with fun lines. |
 | `test/convert.test.js` | Converter tests. |
+| `assets/` | Icon sources: `icon.svg` (square master), `logo.svg` (rounded, for the README), `app-icon-1024.png` (App Store icon, no alpha). `extension/images/icon-*.png` are resized from it. |
 
 ## Storage (`browser.storage.local`)
 
@@ -41,7 +42,6 @@ No build step, no dependencies: plain JS, tested with Node's built-in runner.
   - Whether Safari opens the Maps app directly from `https://maps.apple.com/...` or shows a web banner. A `maps://` scheme may fix this but can be blocked without a user gesture.
   - Whether iOS hands `maps.apple.com` links to the Maps app before Safari loads them, so the Apple → Google direction never triggers.
 - Apple URL parameters `mode` (for `/directions`) and `coordinate`/`name` (for `/place`) were implemented from memory of the share-link format; verify against real shared links.
-- No extension icons yet.
 - Counter increments are read-modify-write, so concurrent tabs can under-count.
 
 ## Building for iOS (needs full Xcode)
