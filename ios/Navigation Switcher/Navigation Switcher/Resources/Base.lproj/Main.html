@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="../Style.css">
+</head>
+<body>
+    <header>
+        <img src="../Icon.png" width="96" height="96" alt="Navigation Switcher Icon">
+        <h1>Almost there</h1>
+        <p>Turn on the Safari extension once. It takes about a minute.</p>
+    </header>
+
+    <ol class="steps">
+        <li>
+            <h2>Open Settings</h2>
+            <p>Tap the button, then follow the next steps in the Settings app.</p>
+            <a class="button" href="navswitcher://open-settings">Open Settings</a>
+        </li>
+
+        <li>
+            <h2>Go to Apps, then Safari</h2>
+            <p>Scroll down in Settings and tap <b>Apps</b>, then tap <b>Safari</b>.</p>
+            <div class="mock">
+                <div class="title">Settings</div>
+                <div class="row">General<span class="chev">›</span></div>
+                <div class="row hit">Apps<span class="chev">›</span></div>
+            </div>
+            <div class="mock">
+                <div class="title">Apps</div>
+                <div class="row">Maps<span class="chev">›</span></div>
+                <div class="row hit">Safari<span class="chev">›</span></div>
+            </div>
+            <p class="note">On iOS 17 or earlier, tap <b>Safari</b> directly in Settings.</p>
+        </li>
+
+        <li>
+            <h2>Tap Extensions</h2>
+            <p>Scroll down to the General section in Safari’s settings and tap <b>Extensions</b>.</p>
+            <div class="mock">
+                <div class="title">Safari</div>
+                <div class="row">Profiles<span class="chev">›</span></div>
+                <div class="row hit">Extensions<span class="chev">›</span></div>
+            </div>
+        </li>
+
+        <li>
+            <h2>Turn on Navigation Switcher</h2>
+            <p>Tap <b>Navigation Switcher</b> and switch on <b>Allow Extension</b>.</p>
+            <div class="mock">
+                <div class="title">Navigation Switcher</div>
+                <div class="row hit">Allow Extension<span class="toggle on"></span></div>
+            </div>
+        </li>
+
+        <li>
+            <h2>Allow the map websites</h2>
+            <p>Under <b>Permissions</b>, set every website in the list to <b>Allow</b>. Without this, links will not be switched.</p>
+            <div class="mock">
+                <div class="title">Permissions</div>
+                <div class="row">maps.apple.com<span class="value hit">Allow</span></div>
+                <div class="row">www.google.com<span class="value hit">Allow</span></div>
+                <div class="row">maps.app.goo.gl<span class="value hit">Allow</span></div>
+            </div>
+        </li>
+
+        <li>
+            <h2>Pick your maps app</h2>
+            <p>Open Safari and tap the <b>aA</b> button in the address bar, then tap <b>Navigation Switcher</b>. Choose <b>Apple Maps</b> or <b>Google Maps</b>.</p>
+            <div class="mock">
+                <div class="title">Safari</div>
+                <div class="row">Show Reader<span class="chev"></span></div>
+                <div class="row hit">Navigation Switcher<span class="chev">›</span></div>
+            </div>
+        </li>
+    </ol>
+
+    <p class="footer">That’s it. Open any maps link and it will open in your chosen app.</p>
+</body>
+</html>

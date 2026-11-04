@@ -1,0 +1,190 @@
+* {
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    cursor: default;
+}
+
+:root {
+    color-scheme: light dark;
+
+    --accent: #007aff;
+    --card: #ffffff;
+    --bg: #f2f2f7;
+    --line: #d1d1d6;
+    --muted: #6c6c70;
+    --spacing: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --accent: #0a84ff;
+        --card: #1c1c1e;
+        --bg: #000000;
+        --line: #38383a;
+        --muted: #98989f;
+    }
+}
+
+body {
+    margin: 0;
+    padding: calc(var(--spacing) * 2) var(--spacing) calc(var(--spacing) * 2);
+    background: var(--bg);
+
+    font: -apple-system-short-body;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    border-radius: 22px;
+}
+
+h1 {
+    margin: 12px 0 4px;
+    font: -apple-system-title1;
+}
+
+h2 {
+    margin: 0 0 6px;
+    font: -apple-system-headline;
+}
+
+p {
+    margin: 0 0 12px;
+    color: var(--muted);
+}
+
+b {
+    color: inherit;
+}
+
+.steps {
+    margin: var(--spacing) 0 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: step;
+}
+
+.steps > li {
+    position: relative;
+    margin-bottom: 14px;
+    padding: 16px 16px 8px 56px;
+    border-radius: 14px;
+    background: var(--card);
+    counter-increment: step;
+}
+
+.steps > li::before {
+    content: counter(step);
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 12px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Miniature Settings screens: they show where to tap, in the same words iOS uses. */
+.mock {
+    margin-bottom: 12px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--bg);
+    overflow: hidden;
+}
+
+.mock .title {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line);
+    background: var(--card);
+}
+
+.row:last-child {
+    border-bottom: 0;
+}
+
+.row.hit {
+    background: color-mix(in srgb, var(--accent) 16%, var(--card));
+    box-shadow: inset 0 0 0 2px var(--accent);
+    font-weight: 600;
+}
+
+.chev {
+    color: var(--muted);
+}
+
+.value {
+    padding: 2px 8px;
+    border-radius: 6px;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.value.hit {
+    box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+.toggle {
+    position: relative;
+    width: 44px;
+    height: 26px;
+    border-radius: 13px;
+    background: var(--line);
+}
+
+.toggle::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.toggle.on {
+    background: #34c759;
+}
+
+.toggle.on::after {
+    left: 20px;
+}
+
+.note {
+    font-size: 13px;
+}
+
+.footer {
+    text-align: center;
+}

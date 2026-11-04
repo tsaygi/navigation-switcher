@@ -46,8 +46,13 @@ No build step, no dependencies: plain JS, tested with Node's built-in runner.
 
 ## Building for iOS (needs full Xcode)
 
-    xcrun safari-web-extension-converter extension --ios --app-name "Navigation Switcher" --project-location ios
+    xcrun safari-web-extension-converter extension --ios-only --swift --app-name "Navigation Switcher" --project-location ios
 
 Then set a signing team in Xcode, run on a device, and enable the extension in
 Settings → Apps → Safari → Extensions (allow the listed websites).
-The generated `ios/` project is not committed yet.
+
+The generated project lives in `ios/Navigation Switcher/` and is committed. It references `extension/` instead of copying it.
+The container app's main screen is a WKWebView showing the setup guide (`Resources/Base.lproj/Main.html`, `Resources/Style.css`).
+The "Open Settings" button is a `navswitcher://` link handled in `ViewController.swift`; there is no JS because the page's CSP is `default-src 'self'`.
+Regenerating the project overwrites the guide, so don't do it casually.
+The bundle identifier is still the converter's placeholder `com.yourCompany.Navigation-Switcher`.
