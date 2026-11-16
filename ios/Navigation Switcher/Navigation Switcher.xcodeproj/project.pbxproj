@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		082C17C74E3F7371327BFD31 /* Navigation Switcher Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1EA4F10A309AF39600C9B29D /* Navigation Switcher Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1FE13C77EFF0FAD6746EABE4 /* convert.js in Resources */ = {isa = PBXBuildFile; fileRef = F9CB4D8F1EAA2B5F3F80A87E /* convert.js */; };
+		2911A27AAC1FF0B60E9582A3 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 06FC2AA63796D15751630B31 /* background.js */; };
+		2FCF9197291A736FA7077405 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D3B776BB02058E5CC72D96 /* SceneDelegate.swift */; };
+		4DF4096E6AC1861FDA738790 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8655BD22297E94A7599C9DEE /* Icon.png */; };
+		605F0B8329EB263C37E7640E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34F51C161F61E7FD0DBD9F2 /* AppDelegate.swift */; };
+		76F3604092B99057F49FBAFA /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 3396878742D8FE2BFBF04ED4 /* Style.css */; };
+		777F6DCCBA97AA92993F88C8 /* images in Resources */ = {isa = PBXBuildFile; fileRef = DAA16F1FBFC9B47BE97BB92C /* images */; };
+		7BC04A9297CEEB41D02E117D /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 22AB4AD5F69EEA9C868230A8 /* content.js */; };
+		8EE6B47D2C1B02C74731E5BD /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = AF5679A644A010C53CCFFDE3 /* popup.html */; };
+		97D26AEFF757D0E5A13DB056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE8562FD868254F6F44AE88B /* Assets.xcassets */; };
+		AB284CB1F24954D5258365A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF8ABCFC73E8E7C014AFF62 /* ViewController.swift */; };
+		BA49BD99B19F77031B41B2BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694CB3D87C903C5F9983E1B7 /* Main.storyboard */; };
+		C348329E5F244F2CAF9D9F77 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1060D73AEF818E1203E96138 /* SafariWebExtensionHandler.swift */; };
+		C41404393519F5368AB1E10A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = FBF95CA814ACFCCE01FABBBC /* Main.html */; };
+		C5059629DDC36320730197DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572E0419251B2E13396EF0A2 /* LaunchScreen.storyboard */; };
+		DB04C913390494B259C3F0BD /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F05EAD0858D7F69396F47B1 /* popup.js */; };
+		E327991F2541E07B1466634A /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = BBFD30CA1857A695BF615154 /* popup.css */; };
+		F15847FB4AA5163FA2D447A7 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 21D28D7503A422543B9B388B /* manifest.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA2E27BCAC335971F0C735F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 705CA84D03EB20A613BBA011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EA4F109309AF39600C9B29D;
+			remoteInfo = "Navigation Switcher Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5DD900FB5EDEF398C5590669 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				082C17C74E3F7371327BFD31 /* Navigation Switcher Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06FC2AA63796D15751630B31 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../../extension/background.js; sourceTree = "<group>"; };
+		1060D73AEF818E1203E96138 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		1EA4F0ED309AF39500C9B29D /* Navigation Switcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navigation Switcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EA4F10A309AF39600C9B29D /* Navigation Switcher Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Navigation Switcher Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21D28D7503A422543B9B388B /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../extension/manifest.json; sourceTree = "<group>"; };
+		22AB4AD5F69EEA9C868230A8 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../../extension/content.js; sourceTree = "<group>"; };
+		3396878742D8FE2BFBF04ED4 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		34D3B776BB02058E5CC72D96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8655BD22297E94A7599C9DEE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8F05EAD0858D7F69396F47B1 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../../extension/popup.js; sourceTree = "<group>"; };
+		AE8562FD868254F6F44AE88B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF5679A644A010C53CCFFDE3 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../../extension/popup.html; sourceTree = "<group>"; };
+		AFF8ABCFC73E8E7C014AFF62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3DAF708A6CD8D5966478FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		BBFD30CA1857A695BF615154 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = ../../../extension/popup.css; sourceTree = "<group>"; };
+		BF46890D8BDCF29482C7B2C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15CC1970F59F1A0536CA005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA16F1FBFC9B47BE97BB92C /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../../extension/images; sourceTree = "<group>"; };
+		F34F51C161F61E7FD0DBD9F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F98ED9A0718CC468AB65CFDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9CB4D8F1EAA2B5F3F80A87E /* convert.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = convert.js; path = ../../../extension/convert.js; sourceTree = "<group>"; };
+		FF87EA992DCB51447453D0AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EF6557D065B20A70020C694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		ABA0470CB08A2912153EA773 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D92FF12A250024CF216ED31 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9CB4D8F1EAA2B5F3F80A87E /* convert.js */,
+				8F05EAD0858D7F69396F47B1 /* popup.js */,
+				06FC2AA63796D15751630B31 /* background.js */,
+				DAA16F1FBFC9B47BE97BB92C /* images */,
+				AF5679A644A010C53CCFFDE3 /* popup.html */,
+				21D28D7503A422543B9B388B /* manifest.json */,
+				BBFD30CA1857A695BF615154 /* popup.css */,
+				22AB4AD5F69EEA9C868230A8 /* content.js */,
+			);
+			name = Resources;
+			path = "Navigation Switcher Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+		6020EB5B60C894050F5DAE58 /* Navigation Switcher Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0D92FF12A250024CF216ED31 /* Resources */,
+				1060D73AEF818E1203E96138 /* SafariWebExtensionHandler.swift */,
+				C15CC1970F59F1A0536CA005 /* Info.plist */,
+			);
+			path = "Navigation Switcher Extension";
+			sourceTree = "<group>";
+		};
+		6C29747C5A014D20E9450230 = {
+			isa = PBXGroup;
+			children = (
+				EFAE228B7C7A822740CCC452 /* Navigation Switcher */,
+				6020EB5B60C894050F5DAE58 /* Navigation Switcher Extension */,
+				A45A82B8D060EC5AF664FF9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		944FBDD9BFC3537121773497 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FBF95CA814ACFCCE01FABBBC /* Main.html */,
+				8655BD22297E94A7599C9DEE /* Icon.png */,
+				3396878742D8FE2BFBF04ED4 /* Style.css */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A45A82B8D060EC5AF664FF9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EA4F0ED309AF39500C9B29D /* Navigation Switcher.app */,
+				1EA4F10A309AF39600C9B29D /* Navigation Switcher Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFAE228B7C7A822740CCC452 /* Navigation Switcher */ = {
+			isa = PBXGroup;
+			children = (
+				F34F51C161F61E7FD0DBD9F2 /* AppDelegate.swift */,
+				34D3B776BB02058E5CC72D96 /* SceneDelegate.swift */,
+				AFF8ABCFC73E8E7C014AFF62 /* ViewController.swift */,
+				572E0419251B2E13396EF0A2 /* LaunchScreen.storyboard */,
+				694CB3D87C903C5F9983E1B7 /* Main.storyboard */,
+				AE8562FD868254F6F44AE88B /* Assets.xcassets */,
+				BF46890D8BDCF29482C7B2C3 /* Info.plist */,
+				944FBDD9BFC3537121773497 /* Resources */,
+			);
+			path = "Navigation Switcher";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EA4F0EC309AF39500C9B29D /* Navigation Switcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0D5E5B0F9DBB590E082BDF /* Build configuration list for PBXNativeTarget "Navigation Switcher" */;
+			buildPhases = (
+				E45C361874140E22468A22A0 /* Sources */,
+				ABA0470CB08A2912153EA773 /* Frameworks */,
+				35521D8ACA2C5F4762AAB71B /* Resources */,
+				5DD900FB5EDEF398C5590669 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D32495421226763B5ACBA06C /* PBXTargetDependency */,
+			);
+			name = "Navigation Switcher";
+			productName = "Navigation Switcher";
+			productReference = 1EA4F0ED309AF39500C9B29D /* Navigation Switcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EA4F109309AF39600C9B29D /* Navigation Switcher Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EB85A8C9F06F3B3E9633829 /* Build configuration list for PBXNativeTarget "Navigation Switcher Extension" */;
+			buildPhases = (
+				C9D157C0C336955D21245466 /* Sources */,
+				5EF6557D065B20A70020C694 /* Frameworks */,
+				B691EF08494D2BDD590F2E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "Navigation Switcher Extension";
+			productName = "Navigation Switcher Extension";
+			productReference = 1EA4F10A309AF39600C9B29D /* Navigation Switcher Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		705CA84D03EB20A613BBA011 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2720;
+				LastUpgradeCheck = 2720;
+			};
+			buildConfigurationList = C3FED0EDC324AB380042774F /* Build configuration list for PBXProject "Navigation Switcher" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 6C29747C5A014D20E9450230;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A45A82B8D060EC5AF664FF9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EA4F0EC309AF39500C9B29D /* Navigation Switcher */,
+				1EA4F109309AF39600C9B29D /* Navigation Switcher Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35521D8ACA2C5F4762AAB71B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				97D26AEFF757D0E5A13DB056 /* Assets.xcassets in Resources */,
+				4DF4096E6AC1861FDA738790 /* Icon.png in Resources */,
+				C5059629DDC36320730197DA /* LaunchScreen.storyboard in Resources */,
+				C41404393519F5368AB1E10A /* Main.html in Resources */,
+				BA49BD99B19F77031B41B2BE /* Main.storyboard in Resources */,
+				76F3604092B99057F49FBAFA /* Style.css in Resources */,
+			);
+		};
+		B691EF08494D2BDD590F2E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				2911A27AAC1FF0B60E9582A3 /* background.js in Resources */,
+				7BC04A9297CEEB41D02E117D /* content.js in Resources */,
+				1FE13C77EFF0FAD6746EABE4 /* convert.js in Resources */,
+				777F6DCCBA97AA92993F88C8 /* images in Resources */,
+				F15847FB4AA5163FA2D447A7 /* manifest.json in Resources */,
+				E327991F2541E07B1466634A /* popup.css in Resources */,
+				8EE6B47D2C1B02C74731E5BD /* popup.html in Resources */,
+				DB04C913390494B259C3F0BD /* popup.js in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9D157C0C336955D21245466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				C348329E5F244F2CAF9D9F77 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+		E45C361874140E22468A22A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				605F0B8329EB263C37E7640E /* AppDelegate.swift in Sources */,
+				2FCF9197291A736FA7077405 /* SceneDelegate.swift in Sources */,
+				AB284CB1F24954D5258365A5 /* ViewController.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D32495421226763B5ACBA06C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EA4F109309AF39600C9B29D /* Navigation Switcher Extension */;
+			targetProxy = FA2E27BCAC335971F0C735F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		572E0419251B2E13396EF0A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F98ED9A0718CC468AB65CFDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		694CB3D87C903C5F9983E1B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF87EA992DCB51447453D0AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBF95CA814ACFCCE01FABBBC /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3DAF708A6CD8D5966478FEF /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05C111F210E35EA68FCD65B4 /* Release configuration for PBXNativeTarget "Navigation Switcher Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Navigation Switcher Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Navigation Switcher Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Navigation-Switcher.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		15D14E287D2DC0CDEED6AC63 /* Release configuration for PBXNativeTarget "Navigation Switcher" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Navigation Switcher/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Navigation Switcher";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Navigation-Switcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BA410625F308DAA32006A54 /* Debug configuration for PBXNativeTarget "Navigation Switcher" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Navigation Switcher/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Navigation Switcher";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Navigation-Switcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D71B9AB11353D4EB51EB7C8 /* Debug configuration for PBXProject "Navigation Switcher" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC9DA73202215A95A5857253 /* Debug configuration for PBXNativeTarget "Navigation Switcher Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Navigation Switcher Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Navigation Switcher Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Navigation-Switcher.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB031524EFDBA90681D51A6B /* Release configuration for PBXProject "Navigation Switcher" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EB85A8C9F06F3B3E9633829 /* Build configuration list for PBXNativeTarget "Navigation Switcher Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC9DA73202215A95A5857253 /* Debug configuration for PBXNativeTarget "Navigation Switcher Extension" */,
+				05C111F210E35EA68FCD65B4 /* Release configuration for PBXNativeTarget "Navigation Switcher Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		6E0D5E5B0F9DBB590E082BDF /* Build configuration list for PBXNativeTarget "Navigation Switcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA410625F308DAA32006A54 /* Debug configuration for PBXNativeTarget "Navigation Switcher" */,
+				15D14E287D2DC0CDEED6AC63 /* Release configuration for PBXNativeTarget "Navigation Switcher" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		C3FED0EDC324AB380042774F /* Build configuration list for PBXProject "Navigation Switcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D71B9AB11353D4EB51EB7C8 /* Debug configuration for PBXProject "Navigation Switcher" */,
+				DB031524EFDBA90681D51A6B /* Release configuration for PBXProject "Navigation Switcher" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 705CA84D03EB20A613BBA011 /* Project object */;
+	validationLevel = 1;
+}

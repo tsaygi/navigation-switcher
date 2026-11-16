@@ -52,6 +52,7 @@ Then set a signing team in Xcode, run on a device, and enable the extension in
 Settings → Apps → Safari → Extensions (allow the listed websites).
 
 The generated project lives in `ios/Navigation Switcher/` and is committed. It references `extension/` instead of copying it.
+The project file is kept in the classic `project.pbxproj` format. Xcode 27 writes a JSON `project.xcproj` instead, which other machines could not open; convert back with `xcodebuild -convert-project "Xcode 16.0" -project "Navigation Switcher.xcodeproj"` if it ever reappears.
 The container app's main screen is a WKWebView showing the setup guide (`Resources/Base.lproj/Main.html`, `Resources/Style.css`).
 The "Open Settings" button is a `navswitcher://` link handled in `ViewController.swift`; there is no JS because the page's CSP is `default-src 'self'`.
 Regenerating the project overwrites the guide, so don't do it casually.
