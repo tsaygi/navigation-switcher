@@ -25,14 +25,33 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
     // The guide's "Open Settings" button is a custom-scheme link, so no JS is needed.
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if navigationAction.request.url?.scheme == "navswitcher" {
-            // iOS only allows opening this app's own page in Settings; the guide covers the rest of the path.
-            if let url = URL(string: UIApplication.openSettingsURLString) {
-                UIApplication.shared.open(url)
-            }
+            openSafariSettings()
             decisionHandler(.cancel)
             return
         }
         decisionHandler(.allow)
+    }
+
+    // There is no public API for Safari's settings page. The App-Prefs scheme is undocumented
+    // (it may change between iOS releases, and App Review can reject it), so the candidates
+    // are tried in order and the documented app-settings URL is the last resort.
+    // The guide covers the rest of the path from wherever Settings lands.
+    private func openSafariSettings() {
+        let candidates = [
+            "App-Prefs:com.apple.mobilesafari",  // iOS 18+
+            "App-Prefs:root=SAFARI",             // iOS 17 and earlier
+            UIApplication.openSettingsURLString,
+        ]
+        open(candidates.compactMap(URL.init))
+    }
+
+    private func open(_ urls: [URL]) {
+        guard let url = urls.first else { return }
+        UIApplication.shared.open(url) { opened in
+            if !opened {
+                self.open(Array(urls.dropFirst()))
+            }
+        }
     }
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
