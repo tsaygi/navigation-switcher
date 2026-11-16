@@ -55,6 +55,6 @@ The generated project lives in `ios/Navigation Switcher/` and is committed. It r
 The project file is kept in the classic `project.pbxproj` format. Xcode 27 writes a JSON `project.xcproj` instead, which other machines could not open; convert back with `xcodebuild -convert-project "Xcode 16.0" -project "Navigation Switcher.xcodeproj"` if it ever reappears.
 The container app's main screen is a WKWebView showing the setup guide (`Resources/Base.lproj/Main.html`, `Resources/Style.css`).
 The "Open Safari Settings" button is a `navswitcher://` link handled in `ViewController.swift`; there is no JS because the page's CSP is `default-src 'self'`.
-It tries the undocumented `App-Prefs:` URLs for Safari's settings first (no public API exists) and falls back to the app's own Settings page. Unverified on device, and a possible App Review rejection (guideline 2.5.1); drop the `App-Prefs` candidates if review complains.
+It tries the undocumented `App-Prefs:` URLs for Safari's settings first (no public API exists) and falls back to the app's own Settings page. Verified on device (opens Safari's settings page), but a possible App Review rejection (guideline 2.5.1); drop the `App-Prefs` candidates if review complains.
 Regenerating the project overwrites the guide, so don't do it casually.
 The bundle identifier is still the converter's placeholder `com.yourCompany.Navigation-Switcher`.
